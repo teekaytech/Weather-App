@@ -6,9 +6,9 @@ import Dom from './modules/dom';
 
 Dom.render();
 
-const city = document.getElementById('city');
-
-city.addEventListener('keyup', async () => {
-  await Weather.fetchInfo(city.value);
-  Dom.displayData(Weather.output);
+Dom.input.addEventListener('keyup', async () => {
+  await Weather.fetchInfo(Dom.input.value);
+  setTimeout(() => {
+    Dom.displayData(Weather.output, Dom.input.value);
+  }, 1000);
 });

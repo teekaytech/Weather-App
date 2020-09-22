@@ -3,6 +3,7 @@ const Weather = (() => {
   const output = {};
 
   const prepareData = (rawData) => {
+    output.name = `${rawData.name}, ${rawData.sys.country}`;
     output.main = rawData.weather[0].main;
     output.temp = rawData.main.temp;
     output.minTemp = rawData.main.temp_min;

@@ -1,22 +1,27 @@
-import Elements from './elements';
-
 const Dom = (() => {
-  const mainCont = document.getElementById('content');
-  const myLoader = Elements.tag('div', '', 'loader', 'loader');
-  const { tag, formTag } = Elements;
+  const input = document.getElementById('city');
+  const cityName = document.getElementById('city-name');
+  const weather = document.getElementById('main');
+  const temp = document.getElementById('tmp');
+  const sunrise = document.getElementById('rise');
+  const sunset = document.getElementById('set');
+  const minTemp = document.getElementById('min');
+  const maxTemp = document.getElementById('max');
+  const humidity = document.getElementById('hum');
+  const timezone = document.getElementById('time');
+  const celciusButton = document.getElementById('cel');
+  const farenheitButton = document.getElementById('far');
 
-  const simpleForm = () => {
-    const fDiv = tag('div', '', 'simpleForm');
-    fDiv.appendChild(tag('form'));
-    fDiv.appendChild(formTag('input', '', 'city', 'city', 'text', 'Your location:'));
-    return fDiv;
-  };
-
-  const weatherSection = () => {
-    const wSection = tag('section', '', 'weather', 'weather');
-    wSection.appendChild(myLoader);
-    wSection.appendChild(tag('div', 'live', 'report', 'report'));
-    return wSection;
+  const displayData = (wdata) => {
+    cityName.innerText = wdata.name;
+    weather.innerText = wdata.main;
+    temp.innerText = wdata.temp;
+    sunrise.innerText = wdata.sunrise;
+    sunset.innerText = wdata.sunset;
+    minTemp.innerText = wdata.minTemp;
+    maxTemp.innerText = wdata.maxTemp;
+    humidity.innerText = wdata.humidity;
+    timezone.innerText = wdata.timezone;
   };
 
   // const toggleLoader = (loader) => {
@@ -26,23 +31,12 @@ const Dom = (() => {
   //     loader.syle.display = 'none';
   //   }
   // };
-  const displayData = wdata => {
-    const dContainer = document.getElementById('report');
-    dContainer.appendChild(tag('span', wdata.temp));
-    console.log(dContainer);
-  };
 
-
-  const render = () => {
-    mainCont.appendChild(tag('h1', "Let's check your weather today", 'head', 'head'));
-    mainCont.appendChild(simpleForm());
-    mainCont.appendChild(weatherSection());
-  };
+  const render = () => {};
 
   return {
     render,
-    mainCont,
-    weatherSection,
+    input,
     displayData,
   };
 })();
