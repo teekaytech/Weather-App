@@ -1,8 +1,14 @@
 import './assets/css/main.scss';
 import './assets/css/loader.scss';
-import FetchData from './modules/fetch';
+import Weather from './modules/fetch';
+import Dom from './modules/dom';
 
 
-window.onload = () => {
-  console.log(FetchData.prepareData('ankara'));
-};
+Dom.render();
+
+const city = document.getElementById('city');
+
+city.addEventListener('keyup', async () => {
+  await Weather.fetchInfo(city.value);
+  Dom.displayData(Weather.output);
+});
