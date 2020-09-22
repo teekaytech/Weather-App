@@ -1,0 +1,33 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "A weather application built with JavaScript &amp; Webpack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teekaytech/Weather-App.git"
+  },
+  "keywords": [],
+  "author": "Taofeek Olalere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teekaytech/Weather-App/issues"
+  },
+  "homepage": "https://github.com/teekaytech/Weather-App#readme",
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {}
+}
