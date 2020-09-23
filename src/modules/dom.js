@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 const Dom = (() => {
   const input = document.getElementById('city');
   const cityName = document.getElementById('city-name');
@@ -8,36 +9,48 @@ const Dom = (() => {
   const minTemp = document.getElementById('min');
   const maxTemp = document.getElementById('max');
   const humidity = document.getElementById('hum');
-  const timezone = document.getElementById('time');
-  const celciusButton = document.getElementById('cel');
-  const farenheitButton = document.getElementById('far');
+  const realFeel = document.getElementById('real');
+  const celUnit = document.getElementById('C').innerText;
+  const farUnit = document.getElementById('F').innerText;
 
-  const displayData = (wdata) => {
+  const pNum = (num) => parseInt(num, 10);
+  const celcius = (number) => Math.ceil(pNum(number) - 273.15);
+  const faren = (number) => Math.ceil((celcius(number) * (9 / 5)) - 32);
+  const getDate = (data) => new Date(parseInt(data, 10) * 1000).toGMTString();
+
+  const displayData = (wdata, unit = 'C') => {
     cityName.innerText = wdata.name;
     weather.innerText = wdata.main;
-    temp.innerText = wdata.temp;
-    sunrise.innerText = wdata.sunrise;
-    sunset.innerText = wdata.sunset;
-    minTemp.innerText = wdata.minTemp;
-    maxTemp.innerText = wdata.maxTemp;
+    sunrise.innerText = getDate(wdata.sunrise);
+    sunset.innerText = getDate(wdata.sunset);
     humidity.innerText = wdata.humidity;
-    timezone.innerText = wdata.timezone;
+
+    temp.innerText = unit === 'C'
+      ? `${celcius(wdata.temp)} ${celUnit}`
+      : `${faren(wdata.temp)} ${farUnit}`;
+
+    realFeel.innerText = unit === 'C'
+      ? `${celcius(wdata.feel)} ${celUnit}`
+      : `${faren(wdata.feel)} ${farUnit}`;
+
+    minTemp.innerText = unit === 'C'
+      ? `${celcius(wdata.minTemp)} ${celUnit}`
+      : `${faren(wdata.minTemp)} ${farUnit}`;
+
+    maxTemp.innerText = unit === 'C'
+      ? `${celcius(wdata.maxTemp)} ${celUnit}`
+      : `${faren(wdata.maxTemp)} ${farUnit}`;
   };
 
-  // const toggleLoader = (loader) => {
-  //   if (loader.style.display === 'none') {
-  //     loader.syle.display = 'block';
-  //   } else {
-  //     loader.syle.display = 'none';
-  //   }
-  // };
-
-  const render = () => {};
+  const toggleLoader = (l) => {
+    l.style.display === 'none'
+      ? (l.style.display = 'block') : (l.style.display = 'none');
+  };
 
   return {
-    render,
     input,
     displayData,
+    toggleLoader,
   };
 })();
 

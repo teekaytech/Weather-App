@@ -11,16 +11,21 @@ const Weather = (() => {
     output.humidity = rawData.main.humidity;
     output.sunrise = rawData.sys.sunrise;
     output.sunset = rawData.sys.sunset;
-    output.timezone = rawData.timezone;
+    output.feel = rawData.main.feels_like;
   };
 
   const fetchInfo = async (city) => {
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`,
-      { mode: 'cors' });
-    const data = await response.json();
-    prepareData(data);
+    try {
+      const response = await fetch(
+        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`,
+        { mode: 'cors' },
+      );
+      const data = await response.json();
+      prepareData(data);
+    } catch (error) {
+      console.log('Hmn...that city is not found!');
+    }
   };
-
 
   return { fetchInfo, output };
 })();

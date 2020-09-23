@@ -11,29 +11,31 @@
         <h1>Let's check today's weather:</h1>
         <input type="text" name="city" id="city" placeholder="Your city here" />
       </section>
+      <div class="loader"></div>
       <section class="wDetails" id="wDetails">
         <h2 class="city-name" id="city-name"></h2>
         <div class="info" id="info">
-          <div class="unit" id="unit">
-            <button class="cel" id="cel" data-value="C">Celcius</button>
-            <button class="far" id="far" data-value="F">Farenheit</button>
-          </div>
           <p class="weather">
             Atmospheric Condition: <span class="main" id="main"></span>
           </p>
           <p class="temp">Temperature: <span class="tmp" id="tmp"></span></p>
+          <p class="feel">Feels like: <span class="real" id="real"></span></p>
           <p class="sunrise">Sunrise: <span class="rise" id="rise"></span></p>
           <p class="sunset">Sunset by: <span class="set" id="set"></span></p>
           <p class="minTemp">
-            Maximum Temperature:<span class="min" id="min"></span>
+            Minimum Temperature:<span class="min" id="min"></span>
           </p>
           <p class="maxTemp">
             Maximum Temperature: <span class="max" id="max"></span>
           </p>
-          <p class="humidity">Humidity: <span class="hum" id="hum"></span></p>
-          <p class="timezone">TimeZone: <span class="time" id="time"></span></p>
+          <p class="humidity">Humidity: <span class="hum" id="hum"></span>%</p>
+          <div class="unit" id="unit">
+            <button class="cel" id="cel" data-value="C">Celcius</button>
+            <button class="far" id="far" data-value="F">Farenheit</button>
+          </div>
         </div>
       </section>
+      <div class="hunit"><span id="C">&#176C</span><span id="F">&#176F</span></div>
     </main>
     <script src="main.js"></script>
   </body>
