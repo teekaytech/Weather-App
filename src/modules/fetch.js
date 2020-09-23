@@ -3,6 +3,10 @@ const Weather = (() => {
   const output = {};
 
   const prepareData = (rawData) => {
+    if (rawData.cod === '404') {
+      output.status = false; return;
+    }
+    output.status = true;
     output.name = `${rawData.name}, ${rawData.sys.country}`;
     output.main = rawData.weather[0].main;
     output.temp = rawData.main.temp;
@@ -23,7 +27,7 @@ const Weather = (() => {
       const data = await response.json();
       prepareData(data);
     } catch (error) {
-      console.log('Hmn...that city is not found!');
+      prepareData(error);
     }
   };
 

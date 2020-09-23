@@ -4,18 +4,21 @@ import Weather from './modules/fetch';
 import Dom from './modules/dom';
 
 let details = '';
+const checkWeather = document.getElementById('find');
 const celciusButton = document.getElementById('cel');
 const farenheitButton = document.getElementById('far');
-const loader = document.querySelector('.loader');
 
-Dom.input.addEventListener('keyup', async () => {
-  await Weather.fetchInfo(Dom.input.value);
+checkWeather.addEventListener('click', async () => {
+  await Weather.fetchInfo(Dom.getInput());
   details = Weather.output;
-  loader.style.display = 'inline-block';
+  Dom.prepareData();
   setTimeout(() => {
-    Dom.displayData(details);
-    loader.style.display = 'none';
-  }, 1500);
+    if (details.status) {
+      Dom.displayData(details);
+    } else {
+      Dom.displayError(details);
+    }
+  }, 1000);
 });
 
 celciusButton.addEventListener('click', () => {
