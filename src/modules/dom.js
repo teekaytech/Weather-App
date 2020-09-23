@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-expressions */
 import Background from './background';
+import Logic from './logic';
 
 const Dom = (() => {
   const input = document.getElementById('city');
@@ -18,57 +19,42 @@ const Dom = (() => {
   const farUnit = document.getElementById('F').innerText;
   const loader = document.querySelector('.loader');
 
-  const pNum = (num) => parseInt(num, 10);
-  const celcius = (number) => Math.ceil(pNum(number) - 273.15);
-  const faren = (number) => Math.ceil(celcius(number) * (9 / 5) - 32);
-  const getDate = (data) => new Date(parseInt(data, 10) * 1000).toGMTString();
   const getInput = () => input.value;
 
-  function doValue(currentUnit, data) {
-    const val = currentUnit === 'C'
-      ? `${celcius(data)} ${celUnit}` : `${faren(data)} ${farUnit}`;
-    return val;
-  }
-
-  const render = (context, value) => {
-    context.style.display = value;
-    context.style.transition = 'display 1s ease-in-out';
-  };
-
   const prepareData = () => {
-    render(details, 'none');
-    render(errorCont, 'none');
-    render(loader, 'inline-block');
+    Logic.render(details, 'none');
+    Logic.render(errorCont, 'none');
+    Logic.render(loader, 'inline-block');
   };
 
   const displayError = () => {
     errorCont.innerText = 'Hmn... city not found!';
-    render(errorCont, 'block');
-    render(loader, 'none');
+    Logic.render(errorCont, 'block');
+    Logic.render(loader, 'none');
   };
 
   const displayData = (wdata, unit = 'C') => {
     Background.change(wdata.main);
     cityName.innerText = wdata.name;
     weather.innerText = wdata.main;
-    sunrise.innerText = getDate(wdata.sunrise);
-    sunset.innerText = getDate(wdata.sunset);
+    sunrise.innerText = Logic.getDate(wdata.sunrise);
+    sunset.innerText = Logic.getDate(wdata.sunset);
     humidity.innerText = wdata.humidity;
-    temp.innerText = doValue(unit, wdata.temp);
-    realFeel.innerText = doValue(unit, wdata.feel);
-    minTemp.innerText = doValue(unit, wdata.minTemp);
-    maxTemp.innerText = doValue(unit, wdata.maxTemp);
-    render(details, 'block');
-    render(errorCont, 'none');
-    render(loader, 'none');
+    temp.innerText = Logic.doValue(unit, wdata.temp, celUnit, farUnit);
+    realFeel.innerText = Logic.doValue(unit, wdata.feel, celUnit, farUnit);
+    minTemp.innerText = Logic.doValue(unit, wdata.minTemp, celUnit, farUnit);
+    maxTemp.innerText = Logic.doValue(unit, wdata.maxTemp, celUnit, farUnit);
+    Logic.render(details, 'block');
+    Logic.render(errorCont, 'none');
+    Logic.render(loader, 'none');
   };
 
   return {
     loader,
-    getInput,
     displayData,
     displayError,
     prepareData,
+    getInput,
   };
 })();
 
