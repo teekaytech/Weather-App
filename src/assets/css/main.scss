@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  transition: background-image 1s ease-in;
 
   main {
     text-align: center;
@@ -20,4 +21,32 @@ body {
 
 .hunit {
   display: none;
+}
+
+.cloud-bg {
+  background-image: url("../images/bg/cloud.jpg");
+}
+
+.rain-bg {
+  background-image: url("../images/bg/rain.jpg");
+}
+
+.clear-bg {
+  background-image: url("../images/bg/clear.jpg");
+}
+
+.fog-bg {
+  background-image: url("../images/bg/fog.jpg");
+}
+
+.snow-bg {
+  background-image: url("../images/bg/snow.jpg");
+}
+
+.sun-bg {
+  background-image: url("../images/bg/sun.jpg");
+}
+
+.others-bg {
+  background-image: url("../images/bg/others.jpg");
 }

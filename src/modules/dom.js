@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-expressions */
+import Background from './background';
+
 const Dom = (() => {
   const input = document.getElementById('city');
   const details = document.getElementById('wDetails');
@@ -30,6 +32,7 @@ const Dom = (() => {
 
   const render = (context, value) => {
     context.style.display = value;
+    context.style.transition = 'display 1s ease-in-out';
   };
 
   const prepareData = () => {
@@ -45,6 +48,7 @@ const Dom = (() => {
   };
 
   const displayData = (wdata, unit = 'C') => {
+    Background.change(wdata.main);
     cityName.innerText = wdata.name;
     weather.innerText = wdata.main;
     sunrise.innerText = getDate(wdata.sunrise);

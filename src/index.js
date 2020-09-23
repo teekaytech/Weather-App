@@ -1,6 +1,6 @@
 import './assets/css/main.scss';
 import './assets/css/loader.scss';
-import Weather from './modules/fetch';
+import Weather from './modules/weatherApi';
 import Dom from './modules/dom';
 
 let details = '';

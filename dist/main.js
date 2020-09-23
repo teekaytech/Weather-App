@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \".loader {\\n  display: none;\\n  border: 16px solid #f3f3f3;\\n  border-radius: 50%;\\n  border-top: 16px solid #3498db;\\n  width: 120px;\\n  height: 120px;\\n  -webkit-animation: spin 2s linear infinite;\\n  /* Safari */\\n  animation: spin 2s linear infinite;\\n}\\n\\n/* Safari */\\n@-webkit-keyframes spin {\\n  0% {\\n    -webkit-transform: rotate(0deg);\\n  }\\n  100% {\\n    -webkit-transform: rotate(360deg);\\n  }\\n}\\n@keyframes spin {\\n  0% {\\n    transform: rotate(0deg);\\n  }\\n  100% {\\n    transform: rotate(360deg);\\n  }\\n}\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/assets/css/loader.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \".loader {\\n  text-align: center;\\n  display: none;\\n  border: 16px solid #f3f3f3;\\n  border-radius: 50%;\\n  border-top: 16px solid #3498db;\\n  width: 120px;\\n  height: 120px;\\n  -webkit-animation: spin 2s linear infinite;\\n  /* Safari */\\n  animation: spin 2s linear infinite;\\n}\\n\\n/* Safari */\\n@-webkit-keyframes spin {\\n  0% {\\n    -webkit-transform: rotate(0deg);\\n  }\\n  100% {\\n    -webkit-transform: rotate(360deg);\\n  }\\n}\\n@keyframes spin {\\n  0% {\\n    transform: rotate(0deg);\\n  }\\n  100% {\\n    transform: rotate(360deg);\\n  }\\n}\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/assets/css/loader.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \"body {\\n  background-color: aqua;\\n}\\n\\n.hunit {\\n  display: none;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/assets/css/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _images_bg_default_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/bg/default.jpg */ \"./src/assets/images/bg/default.jpg\");\n/* harmony import */ var _images_bg_cloud_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/bg/cloud.jpg */ \"./src/assets/images/bg/cloud.jpg\");\n/* harmony import */ var _images_bg_rain_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../images/bg/rain.jpg */ \"./src/assets/images/bg/rain.jpg\");\n/* harmony import */ var _images_bg_clear_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../images/bg/clear.jpg */ \"./src/assets/images/bg/clear.jpg\");\n/* harmony import */ var _images_bg_fog_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../images/bg/fog.jpg */ \"./src/assets/images/bg/fog.jpg\");\n/* harmony import */ var _images_bg_snow_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../images/bg/snow.jpg */ \"./src/assets/images/bg/snow.jpg\");\n/* harmony import */ var _images_bg_sun_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../images/bg/sun.jpg */ \"./src/assets/images/bg/sun.jpg\");\n/* harmony import */ var _images_bg_others_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../images/bg/others.jpg */ \"./src/assets/images/bg/others.jpg\");\n// Imports\n\n\n\n\n\n\n\n\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_images_bg_default_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_images_bg_cloud_jpg__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_images_bg_rain_jpg__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_images_bg_clear_jpg__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_images_bg_fog_jpg__WEBPACK_IMPORTED_MODULE_6__[\"default\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_images_bg_snow_jpg__WEBPACK_IMPORTED_MODULE_7__[\"default\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_6___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_images_bg_sun_jpg__WEBPACK_IMPORTED_MODULE_8__[\"default\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_7___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_images_bg_others_jpg__WEBPACK_IMPORTED_MODULE_9__[\"default\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \"body {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n  background-position: center center;\\n  background-repeat: no-repeat;\\n  background-attachment: fixed;\\n  background-size: cover;\\n}\\nbody main {\\n  text-align: center;\\n}\\nbody .wDetails {\\n  display: none;\\n}\\nbody .error {\\n  display: none;\\n}\\n\\n.hunit {\\n  display: none;\\n}\\n\\n.cloud-bg {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \");\\n}\\n\\n.rain-bg {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_2___ + \");\\n}\\n\\n.clear-bg {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_3___ + \");\\n}\\n\\n.fog-bg {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_4___ + \");\\n}\\n\\n.snow-bg {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_5___ + \");\\n}\\n\\n.sun-bg {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_6___ + \");\\n}\\n\\n.others-bg {\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_7___ + \");\\n}\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/assets/css/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -119,6 +119,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 
 "use strict";
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join('');\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === 'string') {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring\n\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return \"/*# sourceURL=\".concat(cssMapping.sourceRoot || '').concat(source, \" */\");\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = \"sourceMappingURL=data:application/json;charset=utf-8;base64,\".concat(base64);\n  return \"/*# \".concat(data, \" */\");\n}\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = url && url.__esModule ? url.default : url;\n\n  if (typeof url !== 'string') {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n'), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -156,6 +168,102 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 
 /***/ }),
 
+/***/ "./src/assets/images/bg/clear.jpg":
+/*!****************************************!*\
+  !*** ./src/assets/images/bg/clear.jpg ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"9d18ea215f3f547d87b4a203962a1db8.jpg\");\n\n//# sourceURL=webpack:///./src/assets/images/bg/clear.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/bg/cloud.jpg":
+/*!****************************************!*\
+  !*** ./src/assets/images/bg/cloud.jpg ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"d2ef41622cdac41a17097efd3b7ea8b0.jpg\");\n\n//# sourceURL=webpack:///./src/assets/images/bg/cloud.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/bg/default.jpg":
+/*!******************************************!*\
+  !*** ./src/assets/images/bg/default.jpg ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"700bcba018c028fb8db9e5f7d50b7207.jpg\");\n\n//# sourceURL=webpack:///./src/assets/images/bg/default.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/bg/fog.jpg":
+/*!**************************************!*\
+  !*** ./src/assets/images/bg/fog.jpg ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"884d6b15bda3e6121bc55fc206ce1184.jpg\");\n\n//# sourceURL=webpack:///./src/assets/images/bg/fog.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/bg/others.jpg":
+/*!*****************************************!*\
+  !*** ./src/assets/images/bg/others.jpg ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"63b48397f06c51dc49a0e644bef2a304.jpg\");\n\n//# sourceURL=webpack:///./src/assets/images/bg/others.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/bg/rain.jpg":
+/*!***************************************!*\
+  !*** ./src/assets/images/bg/rain.jpg ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"a7b14c019068d05be4c534470c655833.jpg\");\n\n//# sourceURL=webpack:///./src/assets/images/bg/rain.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/bg/snow.jpg":
+/*!***************************************!*\
+  !*** ./src/assets/images/bg/snow.jpg ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"6b84a0d0d7da419cf6c192d5d7900f22.jpg\");\n\n//# sourceURL=webpack:///./src/assets/images/bg/snow.jpg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/bg/sun.jpg":
+/*!**************************************!*\
+  !*** ./src/assets/images/bg/sun.jpg ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"85c50f44aad61a90b66e0c26e77f9d94.jpg\");\n\n//# sourceURL=webpack:///./src/assets/images/bg/sun.jpg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -164,7 +272,19 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/main.scss */ \"./src/assets/css/main.scss\");\n/* harmony import */ var _assets_css_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_css_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_css_loader_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/css/loader.scss */ \"./src/assets/css/loader.scss\");\n/* harmony import */ var _assets_css_loader_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_css_loader_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _modules_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/fetch */ \"./src/modules/fetch.js\");\n/* harmony import */ var _modules_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/dom */ \"./src/modules/dom.js\");\n\n\n\n\n\n_modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].render();\nconst details = '';\nconst celciusButton = document.getElementById('cel');\nconst farenheitButton = document.getElementById('far');\nconst loader = document.querySelector('.loader');\n\n_modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].input.addEventListener('keyup', async () => {\n  await _modules_fetch__WEBPACK_IMPORTED_MODULE_2__[\"default\"].fetchInfo(_modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].input.value);\n  _modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].toggleLoader(loader);\n  setTimeout(() => {\n    _modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].displayData(details);\n  }, 0);\n});\n\ncelciusButton.addEventListener('click', () => {\n  _modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].displayData(details, celciusButton.dataset.value);\n});\n\nfarenheitButton.addEventListener('click', () => {\n  _modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].displayData(details, farenheitButton.dataset.value);\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/main.scss */ \"./src/assets/css/main.scss\");\n/* harmony import */ var _assets_css_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_css_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_css_loader_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/css/loader.scss */ \"./src/assets/css/loader.scss\");\n/* harmony import */ var _assets_css_loader_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_css_loader_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _modules_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/fetch */ \"./src/modules/fetch.js\");\n/* harmony import */ var _modules_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/dom */ \"./src/modules/dom.js\");\n\n\n\n\n\nlet details = '';\nconst checkWeather = document.getElementById('find');\nconst celciusButton = document.getElementById('cel');\nconst farenheitButton = document.getElementById('far');\n\ncheckWeather.addEventListener('click', async () => {\n  await _modules_fetch__WEBPACK_IMPORTED_MODULE_2__[\"default\"].fetchInfo(_modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].getInput());\n  details = _modules_fetch__WEBPACK_IMPORTED_MODULE_2__[\"default\"].output;\n  _modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].prepareData();\n  setTimeout(() => {\n    if (details.status) {\n      _modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].displayData(details);\n    } else {\n      _modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].displayError(details);\n    }\n  }, 1000);\n});\n\ncelciusButton.addEventListener('click', () => {\n  _modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].displayData(details, celciusButton.dataset.value);\n});\n\nfarenheitButton.addEventListener('click', () => {\n  _modules_dom__WEBPACK_IMPORTED_MODULE_3__[\"default\"].displayData(details, farenheitButton.dataset.value);\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/bgProcess.js":
+/*!**********************************!*\
+  !*** ./src/modules/bgProcess.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst Background = (() => {\n  const changeBg = (weather) => {\n    const context = weather.trim().toLowerCase();\n    if (context.includes('rain') || context.includes('shower')) {\n      document.body.classList = 'rain-bg';\n    } else if (context.includes('cloud')) {\n      document.body.classList = 'cloud-bg';\n    } else if (context.includes('clear')) {\n      document.body.classList = 'clear-bg';\n    } else if (context.includes('snow') || context.includes('ice')) {\n      document.body.classList = 'snow-bg';\n    } else if (context.includes('storm')) {\n      document.body.classList = 'storm-bg';\n    } else if (context.includes('sun')) {\n      document.body.classList = 'sun-bg';\n    } else if (context.includes('fog')) {\n      document.body.classList = 'fog-bg';\n    } else { document.body.classList = 'others-bg'; }\n  };\n\n  return { changeBg };\n})();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Background);\n\n//# sourceURL=webpack:///./src/modules/bgProcess.js?");
 
 /***/ }),
 
@@ -176,7 +296,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ass
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst Dom = (() => {\n  const input = document.getElementById('city');\n  const cityName = document.getElementById('city-name');\n  const weather = document.getElementById('main');\n  const temp = document.getElementById('tmp');\n  const sunrise = document.getElementById('rise');\n  const sunset = document.getElementById('set');\n  const minTemp = document.getElementById('min');\n  const maxTemp = document.getElementById('max');\n  const humidity = document.getElementById('hum');\n  const realFeel = document.getElementById('real');\n  const celUnit = document.getElementById('C').innerText;\n  const farUnit = document.getElementById('F').innerText;\n\n  const pNum = (num) => parseInt(num, 10);\n  const celcius = (number) => Math.ceil(pNum(number) - 273.15);\n  const faren = (number) => Math.ceil((celcius(number) * (9 / 5)) - 32);\n  const getDate = (data) => new Date(parseInt(data, 10) * 1000).toGMTString();\n\n  const displayData = (wdata, unit = 'C') => {\n    cityName.innerText = wdata.name;\n    weather.innerText = wdata.main;\n    sunrise.innerText = getDate(wdata.sunrise);\n    sunset.innerText = getDate(wdata.sunset);\n    humidity.innerText = wdata.humidity;\n\n    temp.innerText = unit === 'C'\n      ? `${celcius(wdata.temp)} ${celUnit}`\n      : `${faren(wdata.temp)} ${farUnit}`;\n\n    realFeel.innerText = unit === 'C'\n      ? `${celcius(wdata.feel)} ${celUnit}`\n      : `${faren(wdata.feel)} ${farUnit}`;\n\n    minTemp.innerText = unit === 'C'\n      ? `${celcius(wdata.minTemp)} ${celUnit}`\n      : `${faren(wdata.minTemp)} ${farUnit}`;\n\n    maxTemp.innerText = unit === 'C'\n      ? `${celcius(wdata.maxTemp)} ${celUnit}`\n      : `${faren(wdata.maxTemp)} ${farUnit}`;\n  };\n\n  const toggleLoader = (loader) => {\n    let dprop = loader.style.display;\n    // eslint-disable-next-line no-unused-expressions\n    dprop === 'none' ? (dprop = 'block') : (dprop = 'none');\n  };\n\n  const render = () => {};\n\n  return {\n    render,\n    input,\n    displayData,\n    toggleLoader,\n  };\n})();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Dom);\n\n\n//# sourceURL=webpack:///./src/modules/dom.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bgProcess__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bgProcess */ \"./src/modules/bgProcess.js\");\n/* eslint-disable no-unused-expressions */\n\n\nconst Dom = (() => {\n  const input = document.getElementById('city');\n  const details = document.getElementById('wDetails');\n  const errorCont = document.getElementById('error');\n  const cityName = document.getElementById('city-name');\n  const weather = document.getElementById('main');\n  const temp = document.getElementById('tmp');\n  const sunrise = document.getElementById('rise');\n  const sunset = document.getElementById('set');\n  const minTemp = document.getElementById('min');\n  const maxTemp = document.getElementById('max');\n  const humidity = document.getElementById('hum');\n  const realFeel = document.getElementById('real');\n  const celUnit = document.getElementById('C').innerText;\n  const farUnit = document.getElementById('F').innerText;\n  const loader = document.querySelector('.loader');\n\n  const pNum = (num) => parseInt(num, 10);\n  const celcius = (number) => Math.ceil(pNum(number) - 273.15);\n  const faren = (number) => Math.ceil(celcius(number) * (9 / 5) - 32);\n  const getDate = (data) => new Date(parseInt(data, 10) * 1000).toGMTString();\n  const getInput = () => input.value;\n\n  function doValue(currentUnit, data) {\n    const val = currentUnit === 'C'\n      ? `${celcius(data)} ${celUnit}` : `${faren(data)} ${farUnit}`;\n    return val;\n  }\n\n  const render = (context, value) => {\n    context.style.display = value;\n  };\n\n  const prepareData = () => {\n    render(details, 'none');\n    render(errorCont, 'none');\n    render(loader, 'inline-block');\n  };\n\n  const displayError = () => {\n    errorCont.innerText = 'Hmn... city not found!';\n    render(errorCont, 'block');\n    render(loader, 'none');\n  };\n\n  const displayData = (wdata, unit = 'C') => {\n    _bgProcess__WEBPACK_IMPORTED_MODULE_0__[\"default\"].changeBg(wdata.main);\n    cityName.innerText = wdata.name;\n    weather.innerText = wdata.main;\n    sunrise.innerText = getDate(wdata.sunrise);\n    sunset.innerText = getDate(wdata.sunset);\n    humidity.innerText = wdata.humidity;\n    temp.innerText = doValue(unit, wdata.temp);\n    realFeel.innerText = doValue(unit, wdata.feel);\n    minTemp.innerText = doValue(unit, wdata.minTemp);\n    maxTemp.innerText = doValue(unit, wdata.maxTemp);\n    render(details, 'block');\n    render(errorCont, 'none');\n    render(loader, 'none');\n  };\n\n  return {\n    loader,\n    getInput,\n    displayData,\n    displayError,\n    prepareData,\n  };\n})();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Dom);\n\n\n//# sourceURL=webpack:///./src/modules/dom.js?");
 
 /***/ }),
 
@@ -188,7 +308,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst Dom = (() => {\n  const
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst Weather = (() => {\n  const key = '96941ab728aca2fde601358e7f439b64';\n  const output = {};\n\n  const prepareData = (rawData) => {\n    output.name = `${rawData.name}, ${rawData.sys.country}`;\n    output.main = rawData.weather[0].main;\n    output.temp = rawData.main.temp;\n    output.minTemp = rawData.main.temp_min;\n    output.maxTemp = rawData.main.temp_max;\n    output.humidity = rawData.main.humidity;\n    output.sunrise = rawData.sys.sunrise;\n    output.sunset = rawData.sys.sunset;\n    output.feel = rawData.main.feels_like;\n  };\n\n  const fetchInfo = async (city) => {\n    try {\n      const response = await fetch(\n        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`,\n        { mode: 'cors' },\n      );\n      const data = await response.json();\n      prepareData(data);\n    } catch (error) {\n      console.log('Hmn...that city is not found!');\n    }\n  };\n\n  return { fetchInfo, output };\n})();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Weather);\n\n//# sourceURL=webpack:///./src/modules/fetch.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst Weather = (() => {\n  const key = '96941ab728aca2fde601358e7f439b64';\n  const output = {};\n\n  const prepareData = (rawData) => {\n    if (rawData.cod === '404') {\n      output.status = false; return;\n    }\n    output.status = true;\n    output.name = `${rawData.name}, ${rawData.sys.country}`;\n    output.main = rawData.weather[0].main;\n    output.temp = rawData.main.temp;\n    output.minTemp = rawData.main.temp_min;\n    output.maxTemp = rawData.main.temp_max;\n    output.humidity = rawData.main.humidity;\n    output.sunrise = rawData.sys.sunrise;\n    output.sunset = rawData.sys.sunset;\n    output.feel = rawData.main.feels_like;\n  };\n\n  const fetchInfo = async (city) => {\n    try {\n      const response = await fetch(\n        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`,\n        { mode: 'cors' },\n      );\n      const data = await response.json();\n      prepareData(data);\n    } catch (error) {\n      prepareData(error);\n    }\n  };\n\n  return { fetchInfo, output };\n})();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Weather);\n\n//# sourceURL=webpack:///./src/modules/fetch.js?");
 
 /***/ })
 
