@@ -11,7 +11,7 @@ const loader = document.querySelector('.loader');
 Dom.input.addEventListener('keyup', async () => {
   await Weather.fetchInfo(Dom.input.value);
   details = Weather.output;
-  loader.style.display = 'block';
+  loader.style.display = 'inline-block';
   setTimeout(() => {
     Dom.displayData(details);
     loader.style.display = 'none';

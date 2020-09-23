@@ -21,6 +21,7 @@
   "homepage": "https://github.com/teekaytech/Weather-App#readme",
   "devDependencies": {
     "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
     "sass": "^1.26.10",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
