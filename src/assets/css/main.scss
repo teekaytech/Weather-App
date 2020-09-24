@@ -19,19 +19,19 @@ body {
   background-attachment: fixed;
   background-size: cover;
   transition: background-image 1s ease-in;
+  padding-top: 2.5em;
+  padding-left: 2.5em;
 
   main {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 30%;
     text-align: center;
 
-    .simple-form {
+    .simple-form,
+    .wDetails {
       background-color: rgba(255, 255, 255, 0.3);
       border-radius: 0.3em;
       padding: 2em;
-      margin-bottom: 2em;
+      margin-bottom: 1.5em;
 
       input[type="text"] {
         width: 100%;
@@ -58,7 +58,34 @@ body {
   }
 
   .wDetails {
-    // display: none;
+    display: none;
+    text-align: left;
+
+    .city-name {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    .info {
+      line-height: 1.8;
+      border-radius: 0.5em;
+      padding: 0.1em 1em;
+
+      p {
+        border-bottom: 3px solid rgb(92, 90, 90);
+        background-color: $background;
+        padding: 0 0.5em;
+        margin-bottom: 0.2em;
+        position: relative;
+
+        span {
+          position: absolute;
+          right: 0.5em;
+          font-weight: bolder;
+        }
+      }
+    }
   }
 
   .error {

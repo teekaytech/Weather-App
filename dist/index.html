@@ -8,7 +8,7 @@
   <body>
     <main id="content">
       <section class="simple-form" id="simple-form">
-        <h1>Hi! Let's check your current weather &#127781;</h1>
+        <h1>Hi! Let's check your current weather :</h1>
         <input type="text" name="city" id="city" placeholder="Your city here"/>
         <button id="find">Check</button>
       </section>
@@ -21,19 +21,19 @@
           </p>
           <p class="temp">Temperature: <span class="tmp" id="tmp"></span></p>
           <p class="feel">Feels like: <span class="real" id="real"></span></p>
-          <p class="sunrise">Sunrise: <span class="rise" id="rise"></span></p>
-          <p class="sunset">Sunset by: <span class="set" id="set"></span></p>
+          <p class="humidity">Humidity: <span class="hum" id="hum"></span>%</p>
           <p class="minTemp">
             Minimum Temperature:<span class="min" id="min"></span>
           </p>
           <p class="maxTemp">
             Maximum Temperature: <span class="max" id="max"></span>
           </p>
-          <p class="humidity">Humidity: <span class="hum" id="hum"></span>%</p>
-          <div class="unit" id="unit">
-            <button class="cel" id="cel" data-value="C">Celcius</button>
-            <button class="far" id="far" data-value="F">Farenheit</button>
-          </div>
+          <p class="sunrise">Sunrise: <span class="rise" id="rise"></span></p>
+          <p class="sunset">Sunset by: <span class="set" id="set"></span></p>
+        </div>
+        <div class="unit" id="unit">
+          <button class="cel" id="cel" data-value="C">Celcius</button>
+          <button class="far" id="far" data-value="F">Farenheit</button>
         </div>
       </section>
       <div id="error" class="error"></div>
