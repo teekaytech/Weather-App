@@ -1,0 +1,135 @@
+$background: #fff;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/bg/default.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: background-image 1s ease-in;
+  padding-top: 2.5em;
+  padding-left: 2.5em;
+
+  .error {
+    display: none;
+    color: red;
+    font-weight: bolder;
+    font-size: 1.5em;
+  }
+
+  .wDetails {
+    display: none;
+    text-align: left;
+
+    .city-name {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    .info {
+      line-height: 1.8;
+      border-radius: 0.5em;
+      padding: 0.1em 1em;
+
+      p {
+        border-bottom: 3px solid rgb(92, 90, 90);
+        background-color: $background;
+        padding: 0 0.5em;
+        margin-bottom: 0.2em;
+        position: relative;
+
+        span {
+          position: absolute;
+          right: 0.5em;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+
+  main {
+    width: 30%;
+    text-align: center;
+
+    .simple-form,
+    .wDetails,
+    .error {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 0.3em;
+      padding: 2em;
+      margin-bottom: 1.5em;
+
+      input[type="text"] {
+        width: 100%;
+        margin-top: 1em;
+        padding: 0.7em;
+        border-radius: 1em;
+        outline: none;
+        text-align: center;
+
+        &:focus {
+          background-color: rgb(216, 213, 213);
+        }
+      }
+
+      button {
+        margin-top: 1em;
+        padding: 0.5em;
+        width: 100%;
+        cursor: pointer;
+        background-color: blue;
+        color: $background;
+      }
+
+      .blank {
+        color: red;
+        display: none;
+      }
+    }
+  }
+}
+
+.hunit {
+  display: none;
+}
+
+.cloud-bg {
+  background-image: url("../images/bg/cloud.jpg");
+}
+
+.rain-bg {
+  background-image: url("../images/bg/rain.jpg");
+}
+
+.clear-bg {
+  background-image: url("../images/bg/clear.jpg");
+}
+
+.fog-bg {
+  background-image: url("../images/bg/fog.jpg");
+}
+
+.snow-bg {
+  background-image: url("../images/bg/snow.jpg");
+}
+
+.sun-bg {
+  background-image: url("../images/bg/sun.jpg");
+}
+
+.others-bg {
+  background-image: url("../images/bg/others.jpg");
+}
