@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import Background from './background';
 import Logic from './logic';
 
@@ -31,6 +30,7 @@ const Dom = (() => {
     errorCont.innerText = 'Hmn... city not found!';
     Logic.render(errorCont, 'block');
     Logic.render(loader, 'none');
+    document.body.classList = 'others-bg';
   };
 
   const displayData = (wdata, unit = 'C') => {
