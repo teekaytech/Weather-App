@@ -10,14 +10,19 @@ const start = () => {
   const farenheitButton = document.getElementById('far');
 
   checkWeather.addEventListener('click', async () => {
-    await Weather.fetchInfo(Dom.getInput());
-    details = Weather.output;
-    Dom.prepareData();
+    if (Dom.getInput()) {
+      await Weather.fetchInfo(Dom.getInput());
+      details = Weather.output;
+      Dom.prepareData();
+    } else {
+      Dom.blankError();
+      return;
+    }
     setTimeout(() => {
       if (details.status) {
         Dom.displayData(details);
       } else {
-        Dom.displayError(details);
+        Dom.displayError();
       }
     }, 1000);
   });

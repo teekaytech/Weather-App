@@ -21,10 +21,12 @@ Clear Weather Page
 - JavaScript (ES6)
 - Webpack
 - Open Weather API
+- Netlify
 
 ## Live Demo
 
-<a href="https://teekaytech.github.io/Weather-App" target="_blank">Weather App</a>
+<a href="https://wappjs.netlify.app/" target="_blank">Weather App</a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b8136a23-0b02-4a8a-b0e5-281e6adf9653/deploy-status)](https://app.netlify.com/sites/wappjs/deploys)
 
 ## Getting Started
 

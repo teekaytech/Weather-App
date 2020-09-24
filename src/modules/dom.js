@@ -3,6 +3,7 @@ import Logic from './logic';
 
 const Dom = (() => {
   const input = document.getElementById('city');
+  const inputErr = document.getElementById('blank');
   const details = document.getElementById('wDetails');
   const errorCont = document.getElementById('error');
   const cityName = document.getElementById('city-name');
@@ -18,7 +19,12 @@ const Dom = (() => {
   const farUnit = document.getElementById('F').innerText;
   const loader = document.querySelector('.loader');
 
-  const getInput = () => input.value;
+  const getInput = () => {
+    if (input.value === '') {
+      return false;
+    }
+    return input.value;
+  };
 
   const prepareData = () => {
     Logic.render(details, 'none');
@@ -30,7 +36,14 @@ const Dom = (() => {
     errorCont.innerText = 'Hmn... city not found!';
     Logic.render(errorCont, 'block');
     Logic.render(loader, 'none');
+    Logic.render(inputErr, 'none');
     document.body.classList = 'others-bg';
+  };
+
+  const blankError = () => {
+    inputErr.style.display = 'block';
+    Logic.render(errorCont, 'none');
+    Logic.render(details, 'none');
   };
 
   const displayData = (wdata, unit = 'C') => {
@@ -47,6 +60,7 @@ const Dom = (() => {
     Logic.render(details, 'block');
     Logic.render(errorCont, 'none');
     Logic.render(loader, 'none');
+    Logic.render(inputErr, 'none');
   };
 
   return {
@@ -55,6 +69,7 @@ const Dom = (() => {
     displayError,
     prepareData,
     getInput,
+    blankError,
   };
 })();
 

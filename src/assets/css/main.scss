@@ -93,6 +93,11 @@ body {
         background-color: blue;
         color: $background;
       }
+
+      .blank {
+        color: red;
+        display: none;
+      }
     }
   }
 }
