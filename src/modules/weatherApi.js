@@ -21,7 +21,7 @@ const Weather = (() => {
   const fetchInfo = async (city) => {
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`,
         { mode: 'cors' },
       );
       const data = await response.json();
