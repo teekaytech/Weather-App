@@ -27,7 +27,7 @@ Clear Weather Page
 
 <a href="https://wappjs.netlify.app/" target="_blank">Weather App</a>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b8136a23-0b02-4a8a-b0e5-281e6adf9653/deploy-status)](https://app.netlify.com/sites/wappjs/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d9522c2e-5f11-412b-95a0-8f2d136c8cbc/deploy-status)](https://app.netlify.com/sites/wappjs/deploys)
 
 ## Getting Started
 
