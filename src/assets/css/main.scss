@@ -61,7 +61,7 @@ body {
   }
 
   main {
-    width: 30%;
+    width: 40%;
     text-align: center;
 
     .simple-form,
@@ -132,4 +132,41 @@ body {
 
 .others-bg {
   background-image: url("../images/bg/others.jpg");
+}
+
+@media screen and (max-width: 1023px) {
+  body main {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+
+    main {
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    main {
+      width: 98%;
+
+      .wDetails {
+        padding: 0.1em;
+
+        .info {
+          padding: 0;
+        }
+      }
+    }
+  }
 }
