@@ -2,6 +2,7 @@ import './assets/css/main.scss';
 import './assets/css/loader.scss';
 import Weather from './modules/weatherApi';
 import Dom from './modules/dom';
+import AutoFetch from './modules/autoFetch';
 
 const start = () => {
   let details = '';
@@ -9,18 +10,7 @@ const start = () => {
   const celciusButton = document.getElementById('cel');
   const farenheitButton = document.getElementById('far');
 
-  (() => {
-    const success = async (position) => {
-      await Weather.fetchWithCoord(position.coords.latitude, position.coords.longitude);
-      details = await Weather.output;
-      Dom.prepareData();
-      Dom.displayData(details);
-    };
-    const failure = () => {
-      Dom.displayError();
-    };
-    navigator.geolocation.getCurrentPosition(success, failure);
-  })();
+  AutoFetch();
 
   checkWeather.addEventListener('click', async () => {
     if (Dom.getInput()) {
