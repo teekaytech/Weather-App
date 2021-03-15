@@ -12,8 +12,9 @@ const start = () => {
   (() => {
     const success = async (position) => {
       await Weather.fetchWithCoord(position.coords.latitude, position.coords.longitude);
+      details = await Weather.output;
       Dom.prepareData();
-      Dom.displayData(Weather.output);
+      Dom.displayData(details);
     }
     const failure = () => {
       Dom.displayError();
