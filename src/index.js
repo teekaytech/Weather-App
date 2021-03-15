@@ -10,7 +10,7 @@ const start = () => {
   const celciusButton = document.getElementById('cel');
   const farenheitButton = document.getElementById('far');
 
-  AutoFetch;
+  AutoFetch();
 
   checkWeather.addEventListener('click', async () => {
     if (Dom.getInput()) {

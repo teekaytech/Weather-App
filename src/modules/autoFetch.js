@@ -1,13 +1,13 @@
 import Weather from './weatherApi';
 import Dom from './dom';
 
-const AutoFetch = (() => {
+const AutoFetch = () => {
   const success = async (position) => {
     await Weather.fetchWithCoord(
       position.coords.latitude,
       position.coords.longitude,
     );
-    await Weather.output
+    await Weather.output;
     Dom.displayData(Weather.output);
   };
 
@@ -17,6 +17,6 @@ const AutoFetch = (() => {
 
   Dom.prepareData();
   navigator.geolocation.getCurrentPosition(success, failure);
-})();
+};
 
 export default AutoFetch;
