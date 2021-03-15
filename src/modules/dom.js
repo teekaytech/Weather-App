@@ -32,12 +32,12 @@ const Dom = (() => {
     Logic.render(loader, 'inline-block');
   };
 
-  const displayError = () => {
-    errorCont.innerText = 'Hmn... city not found!';
-    Logic.render(errorCont, 'block');
-    Logic.render(loader, 'none');
-    Logic.render(inputErr, 'none');
-    document.body.classList = 'others-bg';
+  const displayError = (message = "Hmn... city not found!") => {
+    errorCont.innerText = message;
+    Logic.render(errorCont, "block");
+    Logic.render(loader, "none");
+    Logic.render(inputErr, "none");
+    document.body.classList = "others-bg";
   };
 
   const blankError = () => {
