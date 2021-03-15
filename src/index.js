@@ -2,32 +2,45 @@ import './assets/css/main.scss';
 import './assets/css/loader.scss';
 import Weather from './modules/weatherApi';
 import Dom from './modules/dom';
-import AutoFetch from './modules/autoFetch';
 
-const start = () => {
+const start = async () => {
   let details = '';
   const checkWeather = document.getElementById('find');
   const celciusButton = document.getElementById('cel');
   const farenheitButton = document.getElementById('far');
 
-  AutoFetch();
+  (() => {
+    const success = async (position) => {
+      await Weather.fetchWithCoord(
+        position.coords.latitude,
+        position.coords.longitude,
+      );
+      details = await Weather.output;
+      Dom.displayData(details);
+    };
+
+    const failure = () => {
+      Dom.displayError('Auto-location service blocked!');
+    };
+
+    Dom.prepareData();
+
+    navigator.geolocation.getCurrentPosition(success, failure);
+  })();
 
   checkWeather.addEventListener('click', async () => {
     if (Dom.getInput()) {
-      await Weather.fetchInfo(Dom.getInput());
-      details = Weather.output;
       Dom.prepareData();
-    } else {
-      Dom.blankError();
-      return;
-    }
-    setTimeout(() => {
+      await Weather.fetchInfo(Dom.getInput());
+      details = await Weather.output;
       if (details.status) {
         Dom.displayData(details);
       } else {
         Dom.displayError();
       }
-    }, 1000);
+    } else {
+      Dom.blankError();
+    }
   });
 
   celciusButton.addEventListener('click', () => {
