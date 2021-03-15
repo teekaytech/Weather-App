@@ -15,10 +15,10 @@ const start = () => {
       details = await Weather.output;
       Dom.prepareData();
       Dom.displayData(details);
-    }
+    };
     const failure = () => {
       Dom.displayError();
-    }
+    };
     navigator.geolocation.getCurrentPosition(success, failure);
   })();
 
