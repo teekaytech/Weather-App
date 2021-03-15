@@ -9,6 +9,19 @@ const start = () => {
   const celciusButton = document.getElementById('cel');
   const farenheitButton = document.getElementById('far');
 
+  (() => {
+    const success = async (position) => {
+      await Weather.fetchWithCoord(position.coords.latitude, position.coords.longitude);
+      details = await Weather.output;
+      Dom.prepareData();
+      Dom.displayData(details);
+    };
+    const failure = () => {
+      Dom.displayError();
+    };
+    navigator.geolocation.getCurrentPosition(success, failure);
+  })();
+
   checkWeather.addEventListener('click', async () => {
     if (Dom.getInput()) {
       await Weather.fetchInfo(Dom.getInput());
