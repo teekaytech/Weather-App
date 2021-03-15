@@ -31,7 +31,20 @@ const Weather = (() => {
     }
   };
 
-  return { fetchInfo, output };
+  const fetchWithCoord = async (lat, lon) => {
+    try {
+      const response = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`,
+        { mode: "cors" }
+      );
+      const data = await response.json();
+      prepareData(data);
+    } catch (error) {
+      prepareData(error);
+    }
+  };
+
+  return { fetchInfo, fetchWithCoord, output };
 })();
 
 export default Weather;
