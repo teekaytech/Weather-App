@@ -1,15 +1,16 @@
-import Weather from "./weatherApi";
-import Dom from "./dom";
+import Weather from './weatherApi';
+import Dom from './dom';
 
 const AutoFetch = (() => {
   const success = async (position) => {
     await Weather.fetchWithCoord(
       position.coords.latitude,
-      position.coords.longitude
+      position.coords.longitude,
     );
     await Weather.output
-    Dom.displayData(await Weather.output);
+    Dom.displayData(Weather.output);
   };
+
   const failure = () => {
     Dom.displayError('Auto-location service blocked!');
   };
