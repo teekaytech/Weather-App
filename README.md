@@ -64,7 +64,7 @@ Click on the live demo link and peruse the app.
 - Github: [@teekaytech](https://github.com/teekaytech)
 - Twitter: [@ola_lere](https://twitter.com/ola_lere)
 - Linkedin: [olaleretaofeek](https://linkedin.com/in/olaleretaofeek)
-- Portfolio: [Olalere Taofeek](https://teekaytech.github.io/olaleretaofeek/)
+- Portfolio: [Olalere Taofeek](https://taofeekolalere.me/)
 
 ## 🤝 Contributing
 
