@@ -16,18 +16,44 @@
     <title>Weather App</title>
     <link rel="shortcut icon" type="image/jpg" href="./icon.png"/>
     <script type="text/javascript" async=1>
-      ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[]; p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments) };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1; n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","https://cdn.jsdelivr.net/npm/@snowplow/javascript-tracker@3.0.3/dist/sp.min.js","snowplow"));
 
-      window.snowplow('newTracker', 'sp1', 'https://cdn.jsdelivr.net/npm/@snowplow/javascript-tracker@3.0.3/dist/sp.min.js', {
-        appId: 'my-weather-app'
-      });
-      window.snowplow('trackPageView');
+    ;(function(p,l,o,w,i,n,g){
+      if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+      p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+      };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+      n.src=w;g.parentNode.insertBefore(n,g)}
+    }(
+      window,
+      document,
+      "script",
+      "https://01a1ef31-7048-425d-9892-4a0cc2cabc52.try-snowplow.com/try.js",
+      "snowplow")
+    );
+
+
+    snowplow("newTracker", "try", "01a1ef31-7048-425d-9892-4a0cc2cabc52.try-snowplow.com", {
+      appId: "try-snowplow", // you can specify your own app name here
+      platform: "web",
+      forceSecureTracker: true,
+      contexts: {
+        webPage: true, // this sets a unique id for each page view
+        performanceTiming: true // this captures performance metrics like load times
+      }
+    });
+
+    // send first heartbeat after 10 seconds, and every 10 seconds thereafter
+    snowplow("enableActivityTracking", 10, 10);
+    snowplow("enableLinkClickTracking");
+    // note: automatic form tracking only works on html forms
+    snowplow("enableFormTracking");
+    snowplow("trackPageView");
+
     </script>
   </head>
   <body>
     <main id="content">
       <section class="simple-form" id="simple-form">
-        <h1>Hi! Let's check your current weather :</h1>
+        <h1>Hi! Let's check your current :</h1>
         <input type="text" name="city" id="city" placeholder="Your city here"/>
         <button id="find">Check</button>
         <p class="blank" id="blank">City field cannot be blank!</p>
