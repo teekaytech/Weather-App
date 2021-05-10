@@ -1,10 +1,10 @@
 # Weather-App
 
-> This is a Weather App built with JavaScript &amp; Webpack. It features the use of Asynchronous Javascript ES6 usage. I used the Open Weather API to consume the weather details. I also processed the data fetched from the API to render in both Celcius & Fahrenheit. The backdrop changes based on the atmospheric condition of the location provided.
+> This is a Weather App built with JavaScript &amp; Webpack. It features the use of Asynchronous Javascript & ES6 usage. I used the Open Weather API to consume the weather details. I also processed the data fetched from the API to render in both Celcius & Fahrenheit. The backdrop changes based on the atmospheric condition of the location provided.
 
 > Lastly, I embedded Snowplow Micro Tracker to send some behavioral data to Snowplow Analytics (using AWS pgsql utility) that can be used to make decision now and in the future.
 
-> I used 2 auto-tracked events (page view and link clicks). I also used a structured event (trackStructEvent) and lastly, I defined a customized event that was emitted by my app.
+> I used three(3) auto-tracked events (page view, timer tracking, and link clicks). I also used a structured event (trackStructEvent) and all the events are emitted from my app.
 
 Homepage
 ![Landing page](src/assets/images/screenshots/first.png)
@@ -91,6 +91,7 @@ Give a ⭐️ if you like this project!
 - [The Odin Project (Project Spec)](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
 - [Snowplow Analytics Micro docs](https://github.com/snowplow-incubator/snowplow-micro/)
 - [Snowplow JavaScript Tracker Library](https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/javascript-tracker/)
+- [Open Weather API](https://openweathermap.org/api)
 
 ## 📝 License
 
