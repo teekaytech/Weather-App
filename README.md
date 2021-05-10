@@ -79,7 +79,7 @@ Click on the live demo link and peruse the app.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/teekaytech/Weather-App/issues).
 
 ## Show your support
 
@@ -95,4 +95,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://github.com/teekaytech/Weather-App/blob/tracker-feature/LICENSE) licensed.
