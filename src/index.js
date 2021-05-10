@@ -2,12 +2,16 @@ import './assets/css/main.scss';
 import './assets/css/loader.scss';
 import Weather from './modules/weatherApi';
 import Dom from './modules/dom';
+import trackData from './events/weather';
 
 const start = async () => {
   let details = '';
   const checkWeather = document.getElementById('find');
   const celciusButton = document.getElementById('cel');
   const farenheitButton = document.getElementById('far');
+
+  window.snowplow('enableLinkClickTracking');
+  window.snowplow('trackPageView');
 
   (() => {
     const success = async (position) => {
@@ -35,6 +39,7 @@ const start = async () => {
       details = await Weather.output;
       if (details.status) {
         Dom.displayData(details);
+        trackData.weather(details);
       } else {
         Dom.displayError();
       }
