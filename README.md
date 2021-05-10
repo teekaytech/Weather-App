@@ -1,6 +1,10 @@
 # Weather-App
 
-> This is a Weather App built with JavaScript &amp; Webpack. The project comes at the end of the Asynchronous Javascript and APIs section of my Javascript course. It tests my knowledge about asynchronous communication with promises or async/await and when to use them. I used the Open Weather API to consume the weather details. I also processed the data fetched from the API to render in both Celcius & Fahrenheit. The background changes based on the atmospheric condition of the location provided.
+> This is a Weather App built with JavaScript &amp; Webpack. It features the use of Asynchronous Javascript ES6 usage. I used the Open Weather API to consume the weather details. I also processed the data fetched from the API to render in both Celcius & Fahrenheit. The backdrop changes based on the atmospheric condition of the location provided.
+
+> Lastly, I embedded Snowplow Micro Tracker to send some behavioral data to Snowplow Analytics (using AWS pgsql utility) that can be used to make decision now and in the future.
+
+> I used 2 auto-tracked events (page view and link clicks). I also used a structured event (trackStructEvent) and lastly, I defined a customized event that was emitted by my app.
 
 Homepage
 ![Landing page](src/assets/images/screenshots/first.png)
@@ -22,6 +26,7 @@ Clear Weather Page
 - Webpack
 - Open Weather API
 - Netlify
+- Snowplow Micro Tracker
 
 ## Live Demo
 
@@ -39,10 +44,14 @@ To get a local copy up and running follow these simple example steps.
 - If you're running Windows Operating System, open your command prompt. On Linux, Open your terminal.
 - Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where you want the project to be.
 - Type `git clone`, and then paste the URL you copied in Step 3.<br>
-  `$ git clone https://github.com/teekaytech/Weather-App.git` <em>Press Enter key</em><br>
+  `git clone https://github.com/teekaytech/Weather-App.git` <em>Press Enter key</em><br>
 - Press Enter. Your local copy will be created.
+- Checkout to the feature branch: <br>
+  `git checkout tracker-feature`
+- Install the app dependencies and packages with `npm install` command
+- Open a live server that allows you to test the app from your browser with `npm start`.
 
-Please Note that you must have github installed on your PC, this can be done [here](https://gist.github.com/derhuerst/1b15ff4652a867391f03).
+Please Note that you must have [GitHub](https://gist.github.com/derhuerst/1b15ff4652a867391f03) and [NPM/Node](https://nodejs.org/en/download/) installed on your PC.
 
 ### Prerequisites
 
@@ -61,10 +70,10 @@ Click on the live demo link and peruse the app.
 
 👤 **Taofeek Olalere**
 
+- Portfolio: [Olalere Taofeek](https://taofeekolalere.me/)
 - Github: [@teekaytech](https://github.com/teekaytech)
 - Twitter: [@ola_lere](https://twitter.com/ola_lere)
 - Linkedin: [olaleretaofeek](https://linkedin.com/in/olaleretaofeek)
-- Portfolio: [Olalere Taofeek](https://taofeekolalere.me/)
 
 ## 🤝 Contributing
 
@@ -80,6 +89,8 @@ Give a ⭐️ if you like this project!
 
 - [Microverse](https://.microverse.org/)
 - [The Odin Project (Project Spec)](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
+- [Snowplow Analytics Micro docs](https://github.com/snowplow-incubator/snowplow-micro/)
+- [Snowplow JavaScript Tracker Library](https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/javascript-trackers/javascript-tracker/)
 
 ## 📝 License
 

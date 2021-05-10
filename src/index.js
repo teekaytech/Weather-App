@@ -6,6 +6,7 @@ import trackData from './events/weather';
 
 const start = async () => {
   let details = '';
+  let loadTime = 0;
   const checkWeather = document.getElementById('find');
   const celciusButton = document.getElementById('cel');
   const farenheitButton = document.getElementById('far');
@@ -35,11 +36,13 @@ const start = async () => {
   checkWeather.addEventListener('click', async () => {
     if (Dom.getInput()) {
       Dom.prepareData();
+      loadTime = Date.now();
       await Weather.fetchInfo(Dom.getInput());
       details = await Weather.output;
       if (details.status) {
-        Dom.displayData(details);
+        trackData.timer(Date.now() - loadTime);
         trackData.weather(details);
+        Dom.displayData(details);
       } else {
         Dom.displayError();
       }
